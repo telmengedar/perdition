@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/camera/SpectatorCamera.cs" type="Script" id=1]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="root" type="Spatial"]
+
+[node name="ui" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1.0
+margin_bottom = -4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="version" type="Label" parent="ui"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 15.0
+margin_top = -31.0
+margin_right = 157.0
+margin_bottom = -10.0
+text = "Perdition Dev 0.001"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.831237, 0.555919, 0, -0.555919, 0.831237, -0.371239, 1.564, 2.53891 )
+script = ExtResource( 1 )

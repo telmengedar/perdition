@@ -11,7 +11,20 @@ config_version=4
 [application]
 
 config/name="Perdition"
+run/main_scene="res://scenes/root.tscn"
 config/icon="res://icon.png"
+
+[global]
+
+editor=true
+rider=true
+
+[input]
+
+look_left={
+"deadzone": 0.5,
+"events": [  ]
+}
 
 [physics]
 
