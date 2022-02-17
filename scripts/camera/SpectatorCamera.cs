@@ -5,13 +5,13 @@ namespace Perdition.scripts.camera {
         
         // Called when the node enters the scene tree for the first time.
         public override void _Ready() {
-            //SetProcess(false);
+            Input.SetMouseMode(Input.MouseMode.Captured);
         }
 
         public override void _Input(InputEvent @event) {
             base._Input(@event);
             if (@event is InputEventMouseMotion mouseMotion) {
-                Rotation += new Vector3(-mouseMotion.Relative.y * 0.002f, -mouseMotion.Relative.x * 0.002f, 0.0f);
+                Rotation += new Vector3(-mouseMotion.Relative.y * 0.008f, -mouseMotion.Relative.x * 0.008f, 0.0f);
             }
 
             if (@event is InputEventKey keyEvent) {
