@@ -32,95 +32,95 @@ namespace Perdition.scripts.map {
             SurfaceTool tool = new SurfaceTool();
             tool.Begin(Mesh.PrimitiveType.Triangles);
             
-            tool.AddNormal(Vector3.Up);
+            tool.AddNormal(Vector3.Down);
             tool.AddUv(new Vector2(0.0f,0.0f));
             tool.AddVertex(new Vector3(-0.5f,-0.5f,-0.5f));
             tool.AddUv(new Vector2(1.0f,0.0f));
             tool.AddVertex(new Vector3(0.5f,-0.5f,-0.5f));
             tool.AddUv(new Vector2(1.0f,1.0f));
             tool.AddVertex(new Vector3(0.5f,-0.5f,0.5f));
-
+            
             tool.AddUv(new Vector2(0.0f,0.0f));
             tool.AddVertex(new Vector3(-0.5f,-0.5f,-0.5f));
-            tool.AddUv(new Vector2(1.0f,1.0f));
+            tool.AddUv(new Vector2(1.0f,0.0f));
             tool.AddVertex(new Vector3(0.5f,-0.5f,0.5f));
-            tool.AddUv(new Vector2(0.0f,1.0f));
+            tool.AddUv(new Vector2(1.0f,1.0f));
             tool.AddVertex(new Vector3(-0.5f,-0.5f,0.5f));
 
-            tool.AddNormal(Vector3.Down);
+            tool.AddNormal(Vector3.Up);
             tool.AddUv(new Vector2(0.0f,0.0f));
             tool.AddVertex(new Vector3(-0.5f,0.5f,0.5f));
             tool.AddUv(new Vector2(1.0f,0.0f));
             tool.AddVertex(new Vector3(0.5f,0.5f,0.5f));
             tool.AddUv(new Vector2(1.0f,1.0f));
             tool.AddVertex(new Vector3(0.5f,0.5f,-0.5f));
-
+            
             tool.AddUv(new Vector2(0.0f,0.0f));
             tool.AddVertex(new Vector3(-0.5f,0.5f,0.5f));
-            tool.AddUv(new Vector2(1.0f,1.0f));
+            tool.AddUv(new Vector2(1.0f,0.0f));
             tool.AddVertex(new Vector3(0.5f,0.5f,-0.5f));
-            tool.AddUv(new Vector2(0.0f,1.0f));
+            tool.AddUv(new Vector2(1.0f,1.0f));
+            tool.AddVertex(new Vector3(-0.5f,0.5f,-0.5f));
+            
+            tool.AddNormal(Vector3.Left);
+            tool.AddUv(new Vector2(0.0f,0.0f));
+            tool.AddVertex(new Vector3(-0.5f,-0.5f,-0.5f));
+            tool.AddUv(new Vector2(1.0f,0.0f));
+            tool.AddVertex(new Vector3(-0.5f,-0.5f,0.5f));
+            tool.AddUv(new Vector2(1.0f,1.0f));
+            tool.AddVertex(new Vector3(-0.5f,0.5f,0.5f));
+            
+            tool.AddUv(new Vector2(0.0f,0.0f));
+            tool.AddVertex(new Vector3(-0.5f,-0.5f,-0.5f));
+            tool.AddUv(new Vector2(1.0f,0.0f));
+            tool.AddVertex(new Vector3(-0.5f,0.5f,0.5f));
+            tool.AddUv(new Vector2(1.0f,1.0f));
             tool.AddVertex(new Vector3(-0.5f,0.5f,-0.5f));
             
             tool.AddNormal(Vector3.Right);
             tool.AddUv(new Vector2(0.0f,0.0f));
-            tool.AddVertex(new Vector3(-0.5f,-0.5f,-0.5f));
-            tool.AddUv(new Vector2(1.0f,0.0f));
-            tool.AddVertex(new Vector3(-0.5f,-0.5f,0.5f));
-            tool.AddUv(new Vector2(1.0f,1.0f));
-            tool.AddVertex(new Vector3(-0.5f,0.5f,0.5f));
-
-            tool.AddUv(new Vector2(0.0f,0.0f));
-            tool.AddVertex(new Vector3(-0.5f,-0.5f,-0.5f));
-            tool.AddUv(new Vector2(1.0f,1.0f));
-            tool.AddVertex(new Vector3(-0.5f,0.5f,0.5f));
-            tool.AddUv(new Vector2(0.0f,1.0f));
-            tool.AddVertex(new Vector3(-0.5f,0.5f,-0.5f));
-
-            tool.AddNormal(Vector3.Left);
-            tool.AddUv(new Vector2(0.0f,0.0f));
             tool.AddVertex(new Vector3(0.5f,-0.5f,0.5f));
             tool.AddUv(new Vector2(1.0f,0.0f));
             tool.AddVertex(new Vector3(0.5f,-0.5f,-0.5f));
             tool.AddUv(new Vector2(1.0f,1.0f));
             tool.AddVertex(new Vector3(0.5f,0.5f,-0.5f));
-
+            
             tool.AddUv(new Vector2(0.0f,0.0f));
             tool.AddVertex(new Vector3(0.5f,-0.5f,0.5f));
-            tool.AddUv(new Vector2(1.0f,1.0f));
+            tool.AddUv(new Vector2(1.0f,0.0f));
             tool.AddVertex(new Vector3(0.5f,0.5f,-0.5f));
-            tool.AddUv(new Vector2(0.0f,1.0f));
+            tool.AddUv(new Vector2(1.0f,1.0f));
             tool.AddVertex(new Vector3(0.5f,0.5f,0.5f));
             
             tool.AddNormal(Vector3.Back);
             tool.AddUv(new Vector2(0.0f,0.0f));
-            tool.AddVertex(new Vector3(-0.5f,-0.5f,-0.5f));
+            tool.AddVertex(new Vector3(-0.5f,-0.5f,0.5f));
             tool.AddUv(new Vector2(1.0f,0.0f));
-            tool.AddVertex(new Vector3(0.5f,-0.5f,-0.5f));
-            tool.AddUv(new Vector2(1.0f,1.0f));
-            tool.AddVertex(new Vector3(0.5f,0.5f,-0.5f));
-
-            tool.AddUv(new Vector2(0.0f,0.0f));
-            tool.AddVertex(new Vector3(-0.5f,-0.5f,-0.5f));
-            tool.AddUv(new Vector2(1.0f,1.0f));
-            tool.AddVertex(new Vector3(0.5f,0.5f,-0.5f));
-            tool.AddUv(new Vector2(0.0f,1.0f));
-            tool.AddVertex(new Vector3(-0.5f,0.5f,-0.5f));
-
-            tool.AddNormal(Vector3.Forward);
-            tool.AddUv(new Vector2(0.0f,0.0f));
             tool.AddVertex(new Vector3(0.5f,-0.5f,0.5f));
-            tool.AddUv(new Vector2(1.0f,0.0f));
-            tool.AddVertex(new Vector3(-0.5f,0.5f,0.5f));
-            tool.AddUv(new Vector2(1.0f,1.0f));
-            tool.AddVertex(new Vector3(-0.5f,0.5f,0.5f));
-
-            tool.AddUv(new Vector2(0.0f,0.0f));
-            tool.AddVertex(new Vector3(0.5f,-0.5f,0.5f));
-            tool.AddUv(new Vector2(1.0f,0.0f));
-            tool.AddVertex(new Vector3(-0.5f,0.5f,0.5f));
             tool.AddUv(new Vector2(1.0f,1.0f));
             tool.AddVertex(new Vector3(0.5f,0.5f,0.5f));
+            
+            tool.AddUv(new Vector2(0.0f,0.0f));
+            tool.AddVertex(new Vector3(-0.5f,-0.5f,0.5f));
+            tool.AddUv(new Vector2(1.0f,0.0f));
+            tool.AddVertex(new Vector3(0.5f,0.5f,0.5f));
+            tool.AddUv(new Vector2(1.0f,1.0f));
+            tool.AddVertex(new Vector3(-0.5f,0.5f,0.5f));
+            
+            tool.AddNormal(Vector3.Forward);
+            tool.AddUv(new Vector2(0.0f,0.0f));
+            tool.AddVertex(new Vector3(0.5f,-0.5f,-0.5f));
+            tool.AddUv(new Vector2(1.0f,0.0f));
+            tool.AddVertex(new Vector3(-0.5f,-0.5f,-0.5f));
+            tool.AddUv(new Vector2(1.0f,1.0f));
+            tool.AddVertex(new Vector3(-0.5f,0.5f,-0.5f));
+            
+            tool.AddUv(new Vector2(0.0f,0.0f));
+            tool.AddVertex(new Vector3(0.5f,-0.5f,-0.5f));
+            tool.AddUv(new Vector2(1.0f,0.0f));
+            tool.AddVertex(new Vector3(-0.5f,0.5f,-0.5f));
+            tool.AddUv(new Vector2(1.0f,1.0f));
+            tool.AddVertex(new Vector3(0.5f,0.5f,-0.5f));
 
             return new MeshInstance {
                 Mesh = tool.Commit()
