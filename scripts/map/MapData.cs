@@ -24,6 +24,38 @@ namespace Perdition.scripts.map {
             return cell;
         }
         
-        
+        public void CreateNeighbourhood()
+        {
+            foreach (var entry in data)
+            { 
+                entry.Value.Neighbours = (int)Direction.None;
+
+                if (GetCell(entry.Key.X - 1, entry.Key.Y) != null) 
+                {
+                    entry.Value.Neighbours += (int)Direction.Left;
+                }
+                if (GetCell(entry.Key.X + 1, entry.Key.Y) != null) 
+                { 
+                    entry.Value.Neighbours += (int)Direction.Right;
+                }
+                if (GetCell(entry.Key.X, entry.Key.Y + 1) != null)
+                {
+                    entry.Value.Neighbours += (int)Direction.Back;
+                }
+                if (GetCell(entry.Key.X, entry.Key.Y - 1) != null)
+                {
+                    entry.Value.Neighbours += (int)Direction.Forward;
+                }
+            }
+
+        }
+
+        public void DrawCells()
+        {
+            foreach (var entry in data)
+            {
+                CellChanged?.Invoke(entry.Key.X, entry.Key.Y, entry.Value);
+            }
+        }
     }
 }

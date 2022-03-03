@@ -17,6 +17,10 @@ namespace Perdition.scripts.map {
             data[0, 2] = new MapCell();
             data[1, 2] = new MapCell();
             data[1, 3] = new MapCell();
+            
+            data.CreateNeighbourhood();
+            
+            data.DrawCells();
         }
     }
 }
